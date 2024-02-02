@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<html>
+<head>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Script/Index.js"></script>
+</head>
+<body>
+    <form>
+        <div class="form-row">
+            <input type="text" id="sid" value="0" class="hidden" />
+            <input type="text" id="cid" value="0" class="hidden" />
+            <div class="col-md-4 mb-3">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="txtfname" name="fname" placeholder="First name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control is-valid" id="txtlname" name="lname" placeholder="Last name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServerUsername">Username</label>
+                <input type="text" class="form-control is-invalid" id="txtusername" name="username" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationServer03">City</label>
+                <input type="text" class="form-control is-invalid" id="txtcity" name="city" placeholder="City Name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer04">State</label>
+                <input type="text" class="form-control is-invalid" id="txtstate" name="state" placeholder="State Name" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer05">Zip</label>
+                <input type="number" class="form-control is-invalid" id="txtzip" name="zip" placeholder="Zip Code" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12"></div>
+        </div><br />
+        <div class="form-group">
+            <button class="btn btn-primary" id="sbtn" type="button">Submit form</button>
+            <button class="btn btn-danger" id="rbtn" type="button">Cleare</button>
+        </div>
+        <div id="dvGrid" class="col-sm-12" style="text-align:center;"></div>
+    </form>
+</body>
+</html>
